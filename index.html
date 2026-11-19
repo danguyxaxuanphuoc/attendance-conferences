@@ -199,14 +199,92 @@
                                     <label for="title" class="form-label">Chức danh / Đơn vị</label>
                                     <select class="form-select form-select-lg" id="title" required>
                                         <option value="" disabled selected>-- Chọn chức danh --</option>
-                                        <option value="Thường trực Đảng ủy">Thường trực Đảng ủy</option>
+                                        <optgroup label="Lãnh đạo Đảng ủy xã">
+                                            <option value="Bí thư Đảng ủy xã">Bí thư Đảng ủy xã</option>
+                                            <option value="Phó Bí thư Thường trực Đảng ủy xã">Phó Bí thư Thường trực Đảng ủy xã</option>
+                                            <option value="Phó Bí thư Đảng ủy xã">Phó Bí thư Đảng ủy xã</option>
+                                        </optgroup>
+                                        <optgroup label="Thành viên cấp ủy xã">
+                                            <option value="Ủy viên Ban Thường vụ Đảng ủy xã">Ủy viên Ban Thường vụ Đảng ủy xã</option>
+                                            <option value="Ủy viên Ban Chấp hành Đảng bộ xã">Ủy viên Ban Chấp hành Đảng bộ xã</option>
+                                        </optgroup>
+                                        <optgroup label="Ủy ban Kiểm tra Đảng ủy xã">
+                                            <option value="Chủ nhiệm Ủy ban Kiểm tra Đảng ủy xã">Chủ nhiệm Ủy ban Kiểm tra Đảng ủy xã</option>
+                                            <option value="Phó Chủ nhiệm Ủy ban Kiểm tra Đảng ủy xã">Phó Chủ nhiệm Ủy ban Kiểm tra Đảng ủy xã</option>
+                                            <option value="Ủy viên Ủy ban Kiểm tra Đảng ủy xã">Ủy viên Ủy ban Kiểm tra Đảng ủy xã</option>
+                                            <option value="Chuyên viên Cơ quan Ủy ban Kiểm tra Đảng ủy xã">Chuyên viên Cơ quan Ủy ban Kiểm tra Đảng ủy xã</option>
+                                        </optgroup>
+                                        <optgroup label="Ban Xây dựng Đảng">
+                                            <option value="Trưởng Ban Xây dựng Đảng">Trưởng Ban Xây dựng Đảng</option>
+                                            <option value="Phó Trưởng Ban Xây dựng Đảng">Phó Trưởng Ban Xây dựng Đảng</option>
+                                            <option value="Chuyên viên Ban Xây dựng Đảng">Chuyên viên Ban Xây dựng Đảng</option>
+                                        </optgroup>
+                                        <optgroup label="Văn phòng Đảng ủy">
+                                            <option value="Chánh Văn phòng Đảng ủy">Chánh Văn phòng Đảng ủy</option>
+                                            <option value="Phó Chánh Văn phòng Đảng ủy">Phó Chánh Văn phòng Đảng ủy</option>
+                                            <option value="Chuyên viên Văn phòng Đảng ủy">Chuyên viên Văn phòng Đảng ủy</option>
+                                        </optgroup>
+
+                                        <!-- Lãnh đạo và thành viên UBND xã -->
+                                        <optgroup label="Lãnh đạo và thành viên UBND xã">
+                                            <option value="Chủ tịch UBND xã">Chủ tịch UBND xã</option>
+                                            <option value="Phó Chủ tịch UBND xã">Phó Chủ tịch UBND xã</option>
+                                            <option value="Ủy viên UBND xã">Ủy viên UBND xã</option>
+                                        </optgroup>
+                                        <!-- Đối chiếu tên Văn phòng với cơ cấu thực tế của địa phương -->
+                                        <optgroup label="Văn phòng HĐND và UBND xã">
+                                            <option value="Chánh Văn phòng HĐND và UBND xã">Chánh Văn phòng HĐND và UBND xã</option>
+                                            <option value="Phó Chánh Văn phòng HĐND và UBND xã">Phó Chánh Văn phòng HĐND và UBND xã</option>
+                                            <option value="Chuyên viên Văn phòng HĐND và UBND xã">Chuyên viên Văn phòng HĐND và UBND xã</option>
+                                        </optgroup>
+                                        <!-- Chỉ giữ nếu địa phương có Phòng Kinh tế -->
+                                        <optgroup label="Phòng Kinh tế">
+                                            <option value="Trưởng Phòng Kinh tế">Trưởng Phòng Kinh tế</option>
+                                            <option value="Phó Trưởng Phòng Kinh tế">Phó Trưởng Phòng Kinh tế</option>
+                                            <option value="Chuyên viên Phòng Kinh tế">Chuyên viên Phòng Kinh tế</option>
+                                        </optgroup>
+                                        <!-- Chỉ giữ nếu địa phương có Phòng Văn hóa - Xã hội -->
+                                        <optgroup label="Phòng Văn hóa - Xã hội">
+                                            <option value="Trưởng Phòng Văn hóa - Xã hội">Trưởng Phòng Văn hóa - Xã hội</option>
+                                            <option value="Phó Trưởng Phòng Văn hóa - Xã hội">Phó Trưởng Phòng Văn hóa - Xã hội</option>
+                                            <option value="Chuyên viên Phòng Văn hóa - Xã hội">Chuyên viên Phòng Văn hóa - Xã hội</option>
+                                        </optgroup>
+                                        <!-- Chỉ giữ nếu đơn vị được thành lập -->
+                                        <optgroup label="Trung tâm Phục vụ hành chính công xã">
+                                            <option value="Giám đốc Trung tâm Phục vụ hành chính công xã">Giám đốc Trung tâm Phục vụ hành chính công xã</option>
+                                            <option value="Phó Giám đốc Trung tâm Phục vụ hành chính công xã">Phó Giám đốc Trung tâm Phục vụ hành chính công xã</option>
+                                            <option value="Chuyên viên Trung tâm Phục vụ hành chính công xã">Chuyên viên Trung tâm Phục vụ hành chính công xã</option>
+                                        </optgroup>
+                                        <!-- Dự phòng cho phòng có tên gọi khác theo quyết định địa phương -->
+                                        <optgroup label="Trung tâm Cung ứng dịch vụ sự nghiệp công xã">
+                                            <option value="Giám đốc Trung tâm Cung ứng dịch vụ sự nghiệp công xã">Giám đốc Trung tâm Cung ứng dịch vụ sự nghiệp công xã</option>
+                                            <option value="Phó Giám đốc Trung tâm Cung ứng dịch vụ sự nghiệp công xã">Phó Giám đốc Trung tâm Cung ứng dịch vụ sự nghiệp công xã</option>
+                                            <option value="Chuyên viên Trung tâm Cung ứng dịch vụ sự nghiệp công xã">Chuyên viên Trung tâm Cung ứng dịch vụ sự nghiệp công xã</option>
+                                        </optgroup>
+
+                                        <!-- Chỉ giữ các nhóm, chức danh có trong cơ cấu thực tế của đơn vị. -->
+                                        <optgroup label="Cấp ủy đảng bộ cơ sở">
+                                            <option value="Bí thư Đảng ủy cơ sở">Bí thư Đảng ủy cơ sở</option>
+                                            <option value="Phó Bí thư Đảng ủy cơ sở">Phó Bí thư Đảng ủy cơ sở</option>
+                                            <option value="Ủy viên Ban Thường vụ Đảng ủy cơ sở">Ủy viên Ban Thường vụ Đảng ủy cơ sở</option>
+                                            <option value="Ủy viên Ban Chấp hành Đảng bộ cơ sở">Ủy viên Ban Chấp hành Đảng bộ cơ sở</option>
+                                        </optgroup>
+                                        <optgroup label="Chi bộ">
+                                            <option value="Bí thư Chi bộ">Bí thư Chi bộ</option>
+                                            <option value="Phó Bí thư Chi bộ">Phó Bí thư Chi bộ</option>
+                                            <option value="Chi ủy viên">Chi ủy viên</option>
+                                        </optgroup>
+                                        <option value="Đảng viên">Đảng viên</option>
+                                        <option value="Đại biểu khách mời">Đại biểu khách mời</option>
+                                        
+                                        <!-- <option value="Thường trực Đảng ủy">Thường trực Đảng ủy</option>
                                         <option value="Ủy viên Ban Thường vụ">Ủy viên Ban Thường vụ</option>
                                         <option value="Đảng ủy viên">Đảng ủy viên</option>
                                         <option value="Bí thư Chi bộ">Bí thư Chi bộ</option>
                                         <option value="Phó Bí thư Chi bộ">Phó Bí thư Chi bộ</option>
                                         <option value="Đảng viên">Đảng viên</option>
                                         <option value="Đại biểu khách mời">Đại biểu khách mời</option>
-                                        <option value="Khác">Khác</option>
+                                        <option value="Khác">Khác</option> -->
                                     </select>
                                 </div>
 
