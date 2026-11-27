@@ -1,2 +1,2 @@
 # attendance-conferences
-Xuan Phuoc party commune
+Xuan Phuoc Commune Party Committee
